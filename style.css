@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.first-info{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 50%;
+}
+.first-info h1{
+    font-weight: 700px;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.btn{
+    background-color: #E02C6D;
+    color: white;
+    width: 40%;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 40px;
+    font-size: 20px;
+}
+.first-section{
+    display: flex;
+    justify-content:space-between
+}
+.main-camera img{
+   background-image: url(images/Circle\ design.svg);
+}
+/* section 1 complete */
