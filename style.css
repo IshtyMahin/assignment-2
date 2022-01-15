@@ -131,8 +131,9 @@ section{
 
  .third-section{
      display: flex;
-     justify-content: center;
+     justify-content: space-between;
  }
+  
  .third-section>div>img{
      width:450px;
      height: 400px;
