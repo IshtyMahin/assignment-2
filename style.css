@@ -9,14 +9,13 @@ body{
   header{
       display: flex;
       justify-content: space-between;
-    
-      
   }
   header h1{
       font-size: 24px;
       padding-left: 20px;
-
+      margin-top: 5px;
   }
+ 
   .menu{
       list-style: none;
       display: flex;
@@ -73,6 +72,10 @@ section{
     padding: 10px 24px;
     border-radius: 40px;
     font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#af2155 ;
 }
 .first-section{
     display: flex;
@@ -112,6 +115,7 @@ section{
 .link-style{
    
     text-align: right;
+    margin-top: 5px;
 }
 .secound-section p, span{
     color: #787885;
@@ -125,6 +129,14 @@ section{
 
  /* 2nd section end   */
 
+ .third-section{
+     display: flex;
+     justify-content: center;
+ }
+ .third-section>div>img{
+     width:450px;
+     height: 400px;
+ }
 
 /* main end  */
 
@@ -136,8 +148,14 @@ footer{
       padding: 10px;
       line-height: 1em;
 }
+.footer>p{
+    margin-bottom:5px;
+}
 .fab{
-    font-size: 15px;
+    font-size: 25px;
+}
+.fab:hover{
+    color: #E02C6D;
 }
 
 /* footer end  */
@@ -340,10 +358,10 @@ footer{
     header{
         width: 100%;
     }
-       .menu{
+     .menu{
               display: none;
-       }
-       .menu-bar{
+     }
+     .menu-bar{
            display: block;
 
        }
@@ -362,6 +380,13 @@ footer{
    }
    .link-style{
        text-align: center;
+   }
+   .third-section{
+       flex-direction: column-reverse;
+       justify-content: center;
+   }
+   .third-section>div{
+       width: 200%;
    }
    footer{
        width: 110vh;
@@ -384,6 +409,13 @@ footer{
     }
     .link-style{
         text-align: left;
+    }
+    .third-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .third-section>div{
+        width: 100%;
     }
    footer{
        width: 130vh;
