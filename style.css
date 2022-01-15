@@ -4,6 +4,48 @@ body{
     margin: 0;
     background: #f8f5f5;
 }
+ /* header start  */
+
+  header{
+      display: flex;
+      justify-content: space-between;
+    
+      
+  }
+  header h1{
+      font-size: 24px;
+      padding-left: 20px;
+
+  }
+  .menu{
+      list-style: none;
+      display: flex;
+  }
+  .menu>li>a{
+      text-decoration: none;
+      margin: 10px;
+  }
+  .menu-bar{
+      display: none;
+  }
+.title{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.title::before{
+    content: 'Start your journey as Influencer';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #E02C6D;
+    animation: typing 4s linear infinite;
+}
+
+/* header end  */
+
+/* main start  */
 main{
     width: 80%;
     margin: 0 auto;
@@ -81,10 +123,14 @@ section{
     color:#AEAEAE;
 }
 
+ /* 2nd section end   */
+
+
+/* main end  */
 
 /* footer start */
 footer{
-    color: white;
+      color: white;
       background-color: rgb(14, 14, 34);
       text-align: center;
       padding: 10px;
@@ -93,26 +139,253 @@ footer{
 .fab{
     font-size: 15px;
 }
+
 /* footer end  */
 
+
+/* Animation start  */
+@keyframes typing {
+    0% {
+        content: '|';
+    }
+
+    2% {
+        content: 'S|';
+    }
+    4% {
+        content: 'St|';
+    }
+    6% {
+        content: 'Sta|';
+    }
+    8% {
+        content: 'Star|';
+    }
+    10% {
+        content: 'Start|';
+    }
+    12% {
+        content: 'Start |';
+    }
+    14% {
+        content: 'Start y|';
+    }
+
+    16% {
+        content: 'Start yo|';
+    }
+
+    18% {
+        content: 'Start you|';
+    }
+
+    20% {
+        content: 'Start your|';
+    }
+    22% {
+        content: 'Start your |';
+    }
+    24% {
+        content: 'Start your j|';
+    }
+    26% {
+        content: 'Start your jo|';
+    }
+    28% {
+        content: 'Start your jou|';
+    }
+
+    30% {
+        content: 'Start your jour|';
+    }
+
+    32% {
+        content: 'Start your journ|';
+    }
+
+    34% {
+        content: 'Start your journe|';
+    }
+
+    36% {
+        content: 'Start your journey|';
+    }
+    38% {
+        content: 'Start your journey |';
+    }
+
+    40% {
+        content: 'Start your journey a|';
+    }
+    42% {
+        content: 'Start your journey as|';
+    }
+    44% {
+        content: 'Start your journey as |';
+    }
+    46% {
+        content: 'Start your journey as I|';
+    }
+
+    48% {
+        content: 'Start your journey as In|';
+    }
+
+    50% {
+        content: 'Start your journey as Inf|';
+    }
+
+    52% {
+        content: 'Start your journey as Infl|';
+    }
+    54% {
+        content: 'Start your journey as Influ|';
+    }
+
+    56% {
+        content: 'Start your journey as Influe|';
+    }
+
+    58% {
+        content: 'Start your journey as Influen|';
+    }
+    60%{
+        content: 'Start your journey as Influenc|';
+    }
+    62%{
+        content: 'Start your journey as Influence|';
+    }
+    64%{
+        content: 'Start your journey as Influencer|';
+    }
+
+    65%,
+    83% {
+        content: 'Start your journey as Influencer|';
+    }
+
+    84% {
+        content: 'Start your journey as Influence|';
+    }
+
+    85% {
+        content: 'Start your journey as Influe|';
+    }
+
+    86% {
+        content: 'Start your journey as Infl|';
+    }
+
+    87% {
+        content: 'Start your journey as In|';
+    }
+
+    88% {
+        content: 'Start your journey as ';
+    }
+
+    89% {
+        content: 'Start your journey a|';
+    }
+
+    90% {
+        content: 'Start your journey|';
+    }
+
+    91% {
+        content: 'Start your journ|';
+    }
+
+    92% {
+        content: 'Start your jou|';
+    }
+
+    93% {
+        content: 'Start your j|';
+    }
+
+    94% {
+        content: 'Start your|';
+    }
+
+    95% {
+        content: 'Start yo|';
+    }
+
+    96% {
+        content: 'Start |';
+    }
+
+    97% {
+        content: 'Star|';
+    }
+
+    98% {
+        content: 'St|';
+    }
+
+    99% {
+        content: 'S|';
+    }
+
+    100% {
+        content: '|';
+    }
+}
+
+/* Animation End  */
+
+/* media query  */
 @media only screen and (max-width:688px) {
+    header{
+        width: 100%;
+    }
+       .menu{
+              display: none;
+       }
+       .menu-bar{
+           display: block;
+
+       }
        .first-section{
-           display: flex;   
-           flex-direction: column-reverse
-        }
-        .first-info{
-            width:100vh;
-        }
-     .secound-section{
-         width: 100vh;
+        display: flex;   
+        flex-direction: column-reverse
      }
-      .containers{
-        grid-template-columns: repeat(1,1fr);
-      }
-      .link-style{
-          text-align: center;
-      }
-      footer{
-          width: 110vh;
-      }
+     .first-info{
+         width:100vh;
+     }
+  .secound-section{
+      width: 100vh;
+  }
+   .containers{
+     grid-template-columns: repeat(1,1fr);
+   }
+   .link-style{
+       text-align: center;
+   }
+   footer{
+       width: 110vh;
+   }
+}
+@media only screen and (min-width:689px) and (max-width:992px){
+    
+    .first-section{
+        display: flex;   
+        flex-direction: column-reverse
+     }
+     .first-info{
+        width:100vh;
+    }
+  .secound-section{
+      width: 100vh;
+  }
+    .containers{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .link-style{
+        text-align: left;
+    }
+   footer{
+       width: 130vh;
+   }
 }
