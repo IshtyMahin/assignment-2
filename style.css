@@ -132,12 +132,9 @@ section{
  .third-section{
      display: flex;
      justify-content: space-between;
+     margin-bottom: 10px;
  }
   
- .third-section>div>img{
-     width:450px;
-     height: 400px;
- }
 
 /* main end  */
 
